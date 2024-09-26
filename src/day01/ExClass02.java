@@ -1,25 +1,25 @@
 package day01;
 
+import java.util.Scanner;
+
 public class ExClass02 {
 	public static void main(String[] args) {
-		char ch = 'A';
-		String str = "asdasdasdasd";
-		System.out.println("------상수------");
-		String korea = "대한민국";
-		System.out.println(korea);
-		korea = "미국";
-		System.out.println(korea);
+		Scanner a = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
+		System.out.println("숫자입력: ");
+		int num;
+		num = a.nextInt();
+		System.out.println("입력값 : " + num);
 		
-		System.out.println("------상수------");
-		final String kore = "대한국";
-		System.out.println(kore);
+		double dou;
+		System.out.println("실수 입력: ");
+		dou = input.nextDouble();
+		System.out.println("입력값 : " + dou);
 		
-		System.out.println("------형 변환------");
-		char ch02 = 'A';
-		int ret;
-		System.out.println(ch02);
-		System.out.println((int)ch02);
-		
+		String str;
+		System.out.println("문자열 입력: ");
+		str = input.next();
+		System.out.println("문자열 입력: " + str);
 		
 		
 	}
