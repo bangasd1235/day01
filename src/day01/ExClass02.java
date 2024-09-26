@@ -4,22 +4,29 @@ import java.util.Scanner;
 
 public class ExClass02 {
 	public static void main(String[] args) {
-		Scanner a = new Scanner(System.in);
+		Scanner n = new Scanner(System.in);
 		Scanner input = new Scanner(System.in);
-		System.out.println("숫자입력: ");
-		int num;
-		num = a.nextInt();
-		System.out.println("입력값 : " + num);
+		String name;
+		int a,b,c ,sum;
 		
-		double dou;
-		System.out.println("실수 입력: ");
-		dou = input.nextDouble();
-		System.out.println("입력값 : " + dou);
-		
-		String str;
-		System.out.println("문자열 입력: ");
-		str = input.next();
-		System.out.println("문자열 입력: " + str);
+		System.out.println("당신의 이름은 무엇입니까?");
+		name = input.next();
+		System.out.println(name + "님의 국어점수: ");
+		a = input.nextInt();
+		System.out.println(name + "님의 영어점수: ");
+		b = input.nextInt();
+		System.out.println(name + "님의 수학점수: ");
+		c = input.nextInt();
+		sum= a+b+c;
+		System.out.println("=================================");
+		System.out.println("이름 : "+name);
+		System.out.println("=================================");
+		System.out.println("국어"+a);
+		System.out.println("영어"+b);
+		System.out.println("수학"+c);
+		System.out.println("=================================");
+		System.out.println(sum);
+		System.out.println("=================================");
 		
 		
 	}
