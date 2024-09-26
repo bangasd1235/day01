@@ -2,12 +2,25 @@ package day01;
 
 public class ExClass02 {
 	public static void main(String[] args) {
-		int number = 123;
-		System.out.println("변경 전 num : " + number);
-		number = 100;
-		System.out.println("변경 후 num : " + number);
-		number = number +200;
-		System.out.println("변경 후 num : " + number);
+		char ch = 'A';
+		String str = "asdasdasdasd";
+		System.out.println("------상수------");
+		String korea = "대한민국";
+		System.out.println(korea);
+		korea = "미국";
+		System.out.println(korea);
+		
+		System.out.println("------상수------");
+		final String kore = "대한국";
+		System.out.println(kore);
+		
+		System.out.println("------형 변환------");
+		char ch02 = 'A';
+		int ret;
+		System.out.println(ch02);
+		System.out.println((int)ch02);
+		
+		
 		
 	}
 }
